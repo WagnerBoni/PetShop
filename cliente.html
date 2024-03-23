@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Pet-Shop</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel='stylesheet' href= "estilo.css">
+</head>
+<body>
+    <h1><center>Projeto Pet-Shop</center></h1>
+    <center><img id="banner"></center>
+    <div class="container-fluid">
+        <div class="row" id="nav">
+            <div class="col-sm-3">
+                <a href="index.html"><p>Produtos</p></a>
+            </div>
+            <div class="col-sm-3">
+                <a href="servico.html"><p>Serviços</p></a>
+            </div>
+            <div class="col-sm-3">
+                <a href="cliente.html"><p>Cadastro Cliente</p></a>
+            </div>
+            <div class="col-sm-3">
+                <a href="pet.html"><p>Cadastro Pet</p></a>
+            </div>
+        </div>
+        <main class="container-fluid" id="conteudo">
+                <div class="row">
+                    <h2>Cadastro de cliente</h2>
+                    <form>
+                        <label>Nome:</label>
+                        <input type="text" name="Nome" placeholder="Nome completo" class="class_input_name" required>
+                        <br>
+                        <fieldset>                
+                            <label>Logradouro:</label>
+                            <input type="text" name="logradouro" placeholder="Nome da rua" required>
+                            <label>Número:</label>
+                            <input type="text" name="numero" placeholder="Número" required>
+                            <label>Complemento:</label>
+                            <input type="text" name="complemento" placeholder="Apto, Bloco, Prédio">
+                            <br>                            
+                            <label>Estado:</label>
+                            <select name="estado">
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="GO">Goias</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RR">Roraima</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergie</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                            <label>Cidade:</label>
+                            <input type="text" name="cidade" placeholder="Informe a cidade" required>
+                        </fieldset>
+                        <br>
+                        <label>Telefone:</label>
+                        <input type="tel" name="telefone" placeholder="(12)34567-8899" pattern="[0-9]{11}" required>
+                        <br>
+                        <label>E-mail:</label>
+                        <input type="email" name="email_cliente" placeholder="exemplo@exemplo.com" required>
+                        <br>
+                        <button class="css_botao btn btn-primary" type="button" onclick="cadastraCliente()">Cadastra Cliente</button>
+                    </form>
+                </div>    
+        </main>
+         
+    </div>
+    <footer class="footer">
+        <span>
+            Desenvolvido com <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#da1010}</style><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg> 
+            por<strong> Wagner</strong>
+        </span>
+        <a href="index.html"><p>Produtos</p></a>
+        <br>
+        <a href="servico.html"><p>Serviços</p></a>
+        <br>
+        <a href="cliente.html"><p>Cadastro Cliente</p></a>
+        <br>
+        <a href="pet.html"><p>Cadastro Pet</p></a>
+    </footer>    
+</body>
+    <script>
+            var vetor_banner = ["bannerpet1.jpg", "bannerpet2.jpg", "bannerpet3.jpg", "bannerpet4.jpg"];
+            var posicao_vetor=0;
+            
+            function cadastraCliente(){
+                alert("Cadastro Completo")
+            }
+
+            function func_banner()
+            {
+                posicao_vetor = (posicao_vetor + 1)%4;
+                document.querySelector("#banner").src = vetor_banner[posicao_vetor];
+            }
+            func_banner()
+            setInterval(func_banner, 5000);
+
+            
+        </script>
+</html>

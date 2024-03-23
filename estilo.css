@@ -1,0 +1,95 @@
+#banner{
+    width: 100%;
+    height: 350px;
+}
+
+body{
+    background-color: #D0F8CC;
+}
+
+.row a{
+    text-decoration:none;
+    color:black
+}
+
+#nav div{
+    background-color: #00D1B2;
+    justify-content: center;
+    text-align: center;
+    text-decoration:none;
+    font-family: "Montserrat",sans-serif;
+    font-size: 25px;
+    padding-top: 10px;
+    color:black
+}
+
+#nav div:hover,#nav div a:hover{
+    background-color: #006DD1;
+    color: white;
+    text-decoration: none;
+}
+
+a .produtoRacao:hover{
+    transform: scale(0.9);
+}
+
+#conteudo{
+    padding-left: 33%;
+}
+
+#conteudo div.carousel{
+    padding-left: 0%;
+    width: 450px;
+    height: 400px;
+}
+
+#produtos div{
+    width: 450px;
+    height: 700px;
+    justify-self: center;
+    margin-top: 50px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.produtoRacao,.produtoRacao img{
+    width: 450px;
+    height: 500px;
+    justify-self: center;
+    transition: transform .2s;
+}
+
+div.imagem img{
+    width: 450px;
+    height: 400px;
+    padding-bottom: 10px;
+}
+
+span{
+    color:black
+}
+
+h2{
+    padding-top: 20px;
+}
+
+form
+        {
+            padding-top: 80px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+form button{
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+
+form input,form select{
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color: darkgray;
+}

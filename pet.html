@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Pet-Shop</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel='stylesheet' href= "estilo.css">
+</head>
+<body>
+    <h1><center>Projeto Pet-Shop</center></h1>
+    <center><img id="banner"></center>
+    <div class="container-fluid">
+        <div class="row" id="nav">
+            <div class="col-sm-3">
+                <a href="index.html"><p>Produtos</p></a>
+            </div>
+            <div class="col-sm-3">
+                <a href="servico.html"><p>Serviços</p></a>
+            </div>
+            <div class="col-sm-3">
+                <a href="cliente.html"><p>Cadastro Cliente</p></a>
+            </div>
+            <div class="col-sm-3">
+                <a href="pet.html"><p>Cadastro Pet</p></a>
+            </div>
+        </div>
+        <main class="container-fluid" id="conteudo">
+                <div class="row">
+                    <h2>Cadastro de Pet</h2>
+                    <form>
+                        <label>Nome do pet:</label>
+                        <input type="text" name="Nome" placeholder="NomePet" class="class_input_name" required>
+                        <br>
+                        <label>Data de nascimento:</label>
+                        <input type="date" name="data_nasc." value="data_nasc." placeholder="DDMMAAAA"required>
+                        <br>
+                        <label>Tipo de pet:</label>
+                        <input type="text" name="Tipo" placeholder="(cachorro/gato/etc.)" class="class_input_name" required>
+                        <br>
+                        <label>Raça do pet:</label>
+                        <input type="text" name="Raca" placeholder="raça do pet" class="class_input_name" required>
+                        <br>
+                        <label>Temperamento:</label>
+                        <br>
+                        <textarea name="temperamento" placeholder="Temperamento e comportamento do seu Pet">
+
+                        </textarea>
+                        <br>
+                        <button class="css_botao btn btn-primary" type="button" onclick="servico()">Confirma Serviço</button>
+                    </form>
+                </div>    
+        </main>
+         
+    </div>
+    <footer class="footer">
+        <span>
+            Desenvolvido com <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#da1010}</style><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg> 
+            por<strong> Wagner</strong>
+        </span>
+        <a href="index.html"><p>Produtos</p></a>
+        <br>
+        <a href="servico.html"><p>Serviços</p></a>
+        <br>
+        <a href="cliente.html"><p>Cadastro Cliente</p></a>
+        <br>
+        <a href="pet.html"><p>Cadastro Pet</p></a>
+    </footer>    
+</body>
+    <script>
+            var vetor_banner = ["bannerpet1.jpg", "bannerpet2.jpg", "bannerpet3.jpg", "bannerpet4.jpg"];
+            var posicao_vetor=0;
+            
+            function cadastroPet(){
+                alert("Cadastro de Pet realizado com sucesso")
+            }
+
+            function func_banner()
+            {
+                posicao_vetor = (posicao_vetor + 1)%4;
+                document.querySelector("#banner").src = vetor_banner[posicao_vetor];
+            }
+            func_banner()
+            setInterval(func_banner, 5000);
+
+            
+        </script>
+</html>
