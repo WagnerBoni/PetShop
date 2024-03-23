@@ -1,0 +1,8 @@
+# PetShop
+O projeto possui um banner no topo que alterna entre imagens logo a baixo está o menu de navegação do site com as opcões: Produtos, Serviços, Cadastro de cliente e Cadastro de Pet. 
+A página inicial é a lista de produtos onde o úsuario pode selecionar para visualização.
+As páginas de cada produto possuem um carrosel que mostra as fotos dos produtos, as páginas também possuem o nome do produto, marca, valor e descrição.
+A tela de Agendamento de banho e tosa solicita uma data,tipo de serviço e opção de tele-busca
+A tela de cadastro de cliente solicita nome,endereço,telefone e e-mail
+A tela de cadastro de pet solicita nome,data de nascimento,tipo de pet e temperamento
+O footer do site possui o nome do autor do projeto e os link de acesso para as páginas do projeto
